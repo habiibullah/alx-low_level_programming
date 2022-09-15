@@ -9,3 +9,5 @@ function that draws a diagonal line on the terminal
 function that prints a square, followed by a new line
 program that prints the numbers from 1 to 100, followed by a new line
 function that prints a triangle, followed by a new line
+program that finds and prints the largest prime factor of the number 612852475143, followed by a new line
+function that prints an integer
