@@ -4,18 +4,18 @@
 #include <string.h>
 
 /**
- * main - Adds positive numbers
- * @argc: argument count
- * @argv: argument vector
- *
- * Return: Always 0
- */ 
-
+  * main - Prints the sum of args positive numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: Always zero
+  */
 int main(int argc, char *argv[])
 {
 	int i;
 	unsigned int k, sum = 0;
 	char *e;
+
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
@@ -26,19 +26,21 @@ int main(int argc, char *argv[])
 			{
 				if (e[k] < 48 || e[k] > 57)
 				{
-					printf ("Error \n");
+					printf("Error\n");
 					return (1);
 				}
 			}
+
 			sum += atoi(e);
 			e++;
 		}
-		printf("%d \n", sum);
+
+		printf("%d\n", sum);
 	}
 	else
 	{
 		printf("0\n");
-
 	}
+
 	return (0);
 }
