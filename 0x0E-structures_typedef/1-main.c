@@ -1,6 +1,5 @@
-#include "1-pi.h"
-#include "1-pi.h"
 #include <stdio.h>
+#include "dog.h"
 
 /**
  * main - check the code
@@ -9,11 +8,9 @@
  */
 int main(void)
 {
-    float a;
-    float r;
+    struct dog my_dog;
 
-    r = 98;
-    a = PI * r * r;
-    printf("%.3f\n", a);
+    init_dog(&my_dog, "Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
     return (0);
 }
