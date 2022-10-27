@@ -36,7 +36,6 @@ unsigned int binary_to_uint(const char *b)
 	return (sum);
 }
 
-
 /*
  * alternative method not using bitwise but a power of 2
  *
