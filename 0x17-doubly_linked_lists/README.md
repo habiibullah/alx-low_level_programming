@@ -7,3 +7,4 @@ returns the nth node
 returns the sum of all the data in list
 inserts a new node at a given position
 deletes the node at index
+Find the largest palindrome made from the product of two 3-digit numbers
