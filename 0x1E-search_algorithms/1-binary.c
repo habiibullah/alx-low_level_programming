@@ -11,29 +11,30 @@
   *         Otherwise, the index where the value is located.
   *
   * Description: Prints the [sub]array being searched after each change.
-  */
+ */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i, left, right;
+	size_t mid, low, high;
 
 	if (array == NULL)
 		return (-1);
 
-	for (left = 0, right = size - 1; right >= left;)
+	for (low = 0, high = size - 1; high >= low;)
 	{
 		printf("Searching in array: ");
-		for (i = left; i < right; i++)
-			printf("%d, ", array[i]);
-		printf("%d\n", array[i]);
+		for (mid = low; mid < high; mid++)
+			printf("%d, ", array[mid]);
+		printf("%d\n", array[mid]);
 
-		i = left + (right - left) / 2;
-		if (array[i] == value)
-			return (i);
-		if (array[i] > value)
-			right = i - 1;
+		mid = low + (high - low) / 2;
+		if (array[mid] == value)
+			return (mid);
+		if (array[mid] > value)
+			high = mid - 1;
 		else
-			left = i + 1;
+			low = mid + 1;
 	}
 
 	return (-1);
 }
+
